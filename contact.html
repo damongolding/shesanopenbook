@@ -41,28 +41,40 @@
 			<!-- FORM -->
 
 			<form	action="https://formspree.io/xgeypnrq" method="POST">
-				<div>
-			  	<label>
-			    	Your name:
-			    	<input type="text" name="name">
-			  	</label>
+				<div class="form-group">
+					<div class= form-group--label>
+						<label>
+			    		Name
+			  		</label>
+					</div>
+					<div class= form-group--input>
+						<input type="text" name="name">
+					</div>
 				</div>
 
-				<div>
-					<label>
-						Your email:
+				<div class="form-group">
+					<div class=form-group--label>
+						<label>
+							Email
+						</label>
+					</div>
+					<div class=form-group--input>
 						<input type="text" name="_replyto">
-					</label>
+					</div>
 				</div>
 
-				<div>
-			  	<label>
-			    	Your message:
-			    	<textarea name="message"></textarea>
-			  	</label>
+				<div class="form-group">
+			  	<div clas="form-group--label">
+						<label>
+			    	Message
+			  		</label>
+					</div>
+					<div class= form-group--input>
+						<textarea name="message"></textarea>
+					</div>
 				</div>
 
-				<div>
+				<div class="form-group">
 			  	<button type="submit">Send</button>
 				</div>
 			</form>
