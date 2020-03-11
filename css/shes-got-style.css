@@ -155,6 +155,36 @@ article.post .post--article-link{
 
 /* --- post END --- */
 
+/* --- forms --- */
+
+.form-group{
+	margin-bottom: 20px;
+}
+
+.form-group--label{
+}
+
+.form-group--input{
+	border-color: #b5b5b5;
+	display: block;
+}
+
+.form-group--button{
+	cursor: pointer;
+	background-color: #4C89D1;
+	border-color: transparent;
+	border-radius: 290486px;
+	font-size: 1.25rem;
+	text-align: center;
+	white-space: nowrap;
+	color: #fff;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 100px;
+}
+
+/* --- forms END --- */
+
 
 /* --- footer --- */
 footer.footer{
