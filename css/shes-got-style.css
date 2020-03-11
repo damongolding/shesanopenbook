@@ -156,6 +156,58 @@ article.post .post--article-link{
 /* --- post END --- */
 
 
+/* -- FORM --- */
+
+.form-group{
+	margin-bottom: 2rem;
+}
+
+/* Styling for the input fields */
+.form-group--input input,
+.form-group--input textarea {
+	font-size: 1rem;
+	padding: 10px;
+	margin-top: 5px;
+	width: 100%;
+	
+	/* Removing some browser default styles for inout field */
+	box-shadow: none;
+	background-color: #fff;
+
+}
+
+
+/* Styling for the form button */
+.form-group--button{
+
+	/* font colour */
+	color: #fff;
+		
+	/* How the cursor behaves when on the element (pointer = hand/finger) */
+	cursor: pointer;
+	
+	text-align: center;
+	background-color: #2f3960;
+
+	/* Make the border invisble */
+	border-color: transparent;
+	
+	font-size: 1.25rem;
+
+	/* 
+		This is how we round corners 
+		(the number is so high just to be sure the button will 
+		always be rounded no matter the size of the button) 
+	*/
+	border-radius: 290486px;
+
+	/* Add some padding */
+	padding: .5rem 2rem;
+}
+
+/* --- END From --- */
+
+
 /* --- footer --- */
 footer.footer{
 	padding: 35px 0;
