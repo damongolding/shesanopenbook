@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600&family=Work+Sans:wght@300;600&display=swap');
 
 /* Global */
 *{
@@ -8,7 +8,7 @@
 
 html,
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	color: #54565A;
 	font-size: 1rem;
 	line-height: 1.8rem;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
 	font-size: 26px;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #000;
 	font-weight: 500;
 	text-align: center;
