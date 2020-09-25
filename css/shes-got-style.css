@@ -221,7 +221,7 @@ footer.footer{
 }
 
 footer.footer .footer--logo{
-	padding: 15px 0;
+	padding: 0;
 	display: block;
 	max-width: 100px;
 	margin: auto;
@@ -239,8 +239,8 @@ footer.footer small{
 	font-weight: 300;
 	display: block;
 	margin: 0 auto;
-	color :#666;
-	padding-top:60px;
+	color :##A8A8A8;
+	padding-top:10px;
 }
 
 /* --- footer END --- */
