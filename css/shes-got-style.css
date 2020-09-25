@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600&family=Lato:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400&family=Lato:wght@300;600&display=swap');
 
 /* Global */
 *{
@@ -21,24 +21,11 @@ img{
 	height: auto;
 }
 
-
 h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 40px;
-	color: #000000;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-align: center;
-	margin: 80px auto 25px auto;
-	line-height: 3rem;
-
-}
-
-h2 {
 	font-size: 26px;
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
 	line-height: 2rem;
 }
@@ -71,7 +58,6 @@ nav.nav ul .nav-item {
 	display: inline-block;
 	font-size: 14px;
 	color: #666;
-	letter-spacing: 1.08px;
 	text-align: center;
 	text-decoration: none
 }
@@ -80,7 +66,6 @@ nav.nav ul .nav-item a{
 	display: inline-block;
 	font-size: 14px;
 	color: #666;
-	letter-spacing: 1.08px;
 	text-align: center;
 	text-decoration: none;
 	padding: 0 0.8em;
@@ -243,10 +228,14 @@ footer.footer .footer--logo{
 
 footer.footer .footer--content{
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
 }
 
 footer.footer small{
 	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	display: block;
 	margin: 0 auto;
 	color :#666;
