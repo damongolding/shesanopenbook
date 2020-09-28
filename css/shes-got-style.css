@@ -125,6 +125,9 @@ article.post .post--article-link{
 
 .post--body{}
 
+	.post--body p{
+    max-width: 750px;
+}
 
 .post--body .float-left{
 	float: left;
@@ -157,7 +160,7 @@ article.post .post--article-link{
 
 form {
   width : 100%;
-	max-width: 500px;
+	max-width: 525px;
   margin: auto;
 }
 
@@ -169,7 +172,7 @@ form {
 .form-group--input input,
 .form-group--input textarea {
 	border: 1px solid #c8c8c8;
-	border-radius: 2px;
+	border-radius: 3px;
 	display: block;
 	font-size: 1rem;
 	padding: 10px;
