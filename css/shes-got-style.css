@@ -83,7 +83,7 @@ nav.nav ul .nav-item a.active {
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-	max-width: 950px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
@@ -127,6 +127,7 @@ article.post .post--article-link{
 
 	.post--body p{
     max-width: 750px;
+		margin: auto;
 }
 
 .post--body .float-left{
