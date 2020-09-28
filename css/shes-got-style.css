@@ -127,7 +127,7 @@ article.post .post--article-link{
 
 	.post--body p{
     max-width: 750px;
-		margin: auto;
+		margin: 1rem auto;
 }
 
 .post--body .float-left{
