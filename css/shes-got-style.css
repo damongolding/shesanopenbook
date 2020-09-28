@@ -83,7 +83,7 @@ nav.nav ul .nav-item a.active {
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-	max-width: 750px;
+	max-width: 950px;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
