@@ -9,6 +9,7 @@
 html,
 body {
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	color: #54565A;
 	font-size: 1rem;
 	line-height: 1.8rem;
@@ -23,7 +24,7 @@ img{
 }
 
 h1 {
-	font-size:1.5rem;
+	font-size:1.75rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
 	font-weight: 400;
@@ -47,7 +48,7 @@ nav.nav {
 nav.nav ul {
 	text-transform: uppercase;
 	letter-spacing: 0.125rem;
-	line-height: 1.8em;
+	line-height: 1.75em;
 	font-weight: 300;
 	font-style: normal;
 	list-style: none;
@@ -58,7 +59,7 @@ nav.nav ul {
 
 nav.nav ul .nav-item {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #666;
 	text-align: center;
 	text-decoration: none
@@ -66,7 +67,7 @@ nav.nav ul .nav-item {
 
 nav.nav ul .nav-item a{
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #666;
 	text-align: center;
 	text-decoration: none;
@@ -189,8 +190,8 @@ form {
 /* Styling for the form button */
 .form-group--button{
 
-	color: #222;
-	font-size: 1rem;
+	color: #333;
+	font-size: 	0.875rem;
 	font-weight: 300;
 	font-style: normal;
 	text-transform: uppercase;
