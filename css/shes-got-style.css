@@ -189,19 +189,20 @@ form {
 /* Styling for the form button */
 .form-group--button{
 
-	/* font colour */
-	color: #fff;
+	color: #222;
+	font-size: 1rem;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+	text-align: center;
+	background-color: #F8BBA6;
 
 	/* How the cursor behaves when on the element (pointer = hand/finger) */
 	cursor: pointer;
 
-	text-align: center;
-	background-color: #4C89D1;
-
 	/* Make the border invisble */
 	border-color: transparent;
-
-	font-size: 1rem;
 
 	/*
 		This is how we round corners
@@ -209,9 +210,12 @@ form {
 		always be rounded no matter the size of the button)
 	*/
 	border-radius: 290486px;
+	padding: .7rem 3rem;
 
-	/* Add some padding */
-	padding: .5rem 2rem;
+	/* to centre the button */
+	display: block;
+	margin: 0 auto;
+
 }
 
 /* --- END From --- */
