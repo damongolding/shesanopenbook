@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&family=Lato:wght@300;400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&600");
 
 /* Global */
 * {
@@ -8,8 +8,7 @@
 
 html,
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
   color: #54565a;
   font-size: 1rem;
   line-height: 1.8rem;
@@ -27,8 +26,8 @@ img {
 h1 {
   font-size: 1.75rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   color: #222;
-  font-weight: 400;
   text-align: center;
   line-height: 2rem;
   padding-top: 0px;
@@ -48,7 +47,6 @@ nav.nav ul {
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   line-height: 1.75em;
-  font-weight: 300;
   font-style: normal;
   list-style: none;
   margin: 0;
@@ -58,7 +56,7 @@ nav.nav ul {
 nav.nav ul .nav-item {
   display: inline-block;
   font-size: 0.875rem;
-  color: #666;
+  color: #54565a;
   text-align: center;
   text-decoration: none;
 }
@@ -66,7 +64,7 @@ nav.nav ul .nav-item {
 nav.nav ul .nav-item a {
   display: inline-block;
   font-size: 0.875rem;
-  color: #666;
+  color: #54565a;
   text-align: center;
   text-decoration: none;
   padding: 0 0.8em;
@@ -92,7 +90,6 @@ nav.nav ul .nav-item a.active {
 article.post {
   line-height: 1.7em;
   letter-spacing: 0px;
-  font-weight: 300;
   font-style: normal;
   font-size: 1rem;
   margin-bottom: 100px;
@@ -170,7 +167,7 @@ article.post .post--article-link {
 
 /* Add the fullwidth class to a image to make it fullwidth */
 img.fullwidth {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin: 2rem auto;
 }
@@ -194,12 +191,13 @@ img.fullwidth {
 
 form {
   width: 100%;
-  max-width: 525px;
+  max-width: 550px;
   margin: auto;
 }
 
 .form-group {
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 /* Styling for the input fields */
@@ -212,7 +210,7 @@ form {
   padding: 10px;
   margin-top: 5px;
 	width: 100%;
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 
   /* Removing some browser default styles for inout field */
   box-shadow: none;
@@ -222,12 +220,10 @@ form {
 
 /* Styling for the form button */
 .form-group--button {
-  color: #333;
-  font-size: 0.875rem;
-  font-weight: 300;
+  color: #54565a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
   text-align: center;
   border: 2px solid #f8bba6;
 
@@ -279,8 +275,7 @@ footer.footer .footer--content {
 
 footer.footer small {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
   display: block;
   margin: 0 auto;
   color: #a8a8a8;
