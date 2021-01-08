@@ -1,254 +1,290 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400&family=Lato:wght@300;400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&family=Lato:wght@300;400,600&display=swap");
 
 /* Global */
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 html,
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	color: #54565A;
-	font-size: 1rem;
-	line-height: 1.8rem;
-	padding: 0;
-	margin:0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #54565a;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  padding: 0;
+  margin: 0;
 }
 
-img{
-	max-width: 100%;
-	height: auto;
-	margin: 2rem auto;
+img {
+  display: block;
+  max-width: 750px;
+  height: auto;
+  margin: 2rem auto;
 }
 
 h1 {
-	font-size:1.75rem;
-	font-family: 'Open Sans', sans-serif;
-	color: #222;
-	font-weight: 400;
-	text-align: center;
-	line-height: 2rem;
-	padding-top: 0px;
+  font-size: 1.75rem;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 0px;
 }
-
 
 /* --- Global END --- */
 
-
 /* --- Nav --- */
 nav.nav {
-	width: auto;
-	text-align: center;
-	margin: 0;
-	padding: 2rem 0;
+  width: auto;
+  text-align: center;
+  margin: 0;
+  padding: 2rem 0;
 }
 
 nav.nav ul {
-	text-transform: uppercase;
-	letter-spacing: 0.125rem;
-	line-height: 1.75em;
-	font-weight: 300;
-	font-style: normal;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  line-height: 1.75em;
+  font-weight: 300;
+  font-style: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 nav.nav ul .nav-item {
-	display: inline-block;
-	font-size: 0.875rem;
-	color: #666;
-	text-align: center;
-	text-decoration: none
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
 }
 
-nav.nav ul .nav-item a{
-	display: inline-block;
-	font-size: 0.875rem;
-	color: #666;
-	text-align: center;
-	text-decoration: none;
-	padding: 0 0.8em;
+nav.nav ul .nav-item a {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0.8em;
 }
 
 nav.nav ul .nav-item a.active {
-	color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 /* --- Nav END --- */
 
-
-
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* --- grid/structure END --- */
 
-
 /* --- post --- */
 article.post {
-	line-height: 1.7em;
-	letter-spacing: 0px;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 1rem;
-	margin-bottom: 100px;
+  line-height: 1.7em;
+  letter-spacing: 0px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
-article.post .post--article-link{
-	text-decoration: none;
-	color: #000;
-
+article.post .post--article-link {
+  text-decoration: none;
+  color: #000;
 }
 
-.post--header{}
-
-.post--date{
-	margin: 30px 0;
-	text-align: center;
-	font-size: 0.875rem;
-	color: #A8A8A8;
+.post--header {
 }
 
-.post--body a{
-	color: #222;
-	text-underline-position: under;
-	text-decoration-skip: link;
+.post--date {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #a8a8a8;
 }
 
-.post--body{}
-
-	.post--body p{
-    max-width: 750px;
-		margin: 1rem auto;
+.post--body a {
+  text-decoration: none;
+  color: inherit;
+  box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
+  will-change: box-shadow;
+  padding-bottom: 3px;
 }
 
-.post--body .float-left{
-	float: left;
-	padding-right:30px;
+.post--body a:hover{
+	box-shadow: rgb(255, 188, 162) 0px -1.4em inset;
+}
+
+.post--body {
+  text-align: center;
+}
+
+.post--body p {
+  text-align: left;
+  max-width: 750px;
+  margin: 1rem auto;
+}
+
+.post--body .float-left {
+  float: left;
+  padding-right: 30px;
 }
 
 /* makes images fullscreen on mobile/tablet */
-@media only screen and (max-width: 750px){
-	.post--body .float-left{
-		float: none;
-		clear: both;
-		width: 100%;
-	}
+@media only screen and (max-width: 750px) {
+  .post--body .float-left {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
 }
 
-.post--link {
-	font-family: 'Open Sans', sans-serif;
-  display: block;
+.post--link{
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 35px 0;
-  color: #000;
+  color: inherit;
+  box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
+  will-change: box-shadow;
+  padding-bottom: 3px;
+}
+
+.post--link:hover{
+  box-shadow: rgb(255, 188, 162) 0px -2.4em inset;
+}
+
+/* Add the fullwidth class to a image to make it fullwidth */
+img.fullwidth {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.caption {
+  display: inline-block;
+}
+.caption img {
+  margin-bottom: 0;
+}
+.caption p {
+  margin: 0.5rem 0 2rem 0;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #a8a8a8;
 }
 
 /* --- post END --- */
 
-
 /* -- FORM --- */
 
 form {
-  width : 100%;
-	max-width: 525px;
+  width: 100%;
+  max-width: 525px;
   margin: auto;
 }
 
-.form-group{
-	margin-bottom: 2rem;
+.form-group {
+  margin-bottom: 2rem;
 }
 
 /* Styling for the input fields */
 .form-group--input input,
 .form-group--input textarea {
-	border: 1px solid #c8c8c8;
-	border-radius: 3px;
-	display: block;
-	font-size: 1rem;
-	padding: 10px;
-	margin-top: 5px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  display: block;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 5px;
 	width: 100%;
+	font-family: "Lato", sans-serif;
 
-	/* Removing some browser default styles for inout field */
-	box-shadow: none;
-	background-color: #fff;
-	outline: none;
+  /* Removing some browser default styles for inout field */
+  box-shadow: none;
+  background-color: #fff;
+  outline: none;
 }
 
-
 /* Styling for the form button */
-.form-group--button{
+.form-group--button {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  border: 2px solid #f8bba6;
 
-	color: #333;
-	font-size: 	0.875rem;
-	font-weight: 300;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 0.125rem;
-	text-align: center;
-	background-color: #F8BBA6;
+  /* How the cursor behaves when on the element (pointer = hand/finger) */
+  cursor: pointer;
 
-	/* How the cursor behaves when on the element (pointer = hand/finger) */
-	cursor: pointer;
+  background-color: #fff;
 
-	/* Make the border invisble */
-	border-color: transparent;
-
-	/*
+  /*
 		This is how we round corners
 		(the number is so high just to be sure the button will
 		always be rounded no matter the size of the button)
 	*/
-	border-radius: 290486px;
-	padding: .7rem 3rem;
+  border-radius: 290486px;
+  padding: 0.7rem 3rem;
 
-	/* to centre the button */
-	display: block;
+  /* to centre the button */
+  display: block;
 	margin: 0 auto;
+	
+	transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
+	will-change: background-color;
+}
 
+.form-group--button:hover {
+  background-color: #f8bba6;
 }
 
 /* --- END From --- */
 
-
 /* --- footer --- */
-footer.footer{
-	padding: 35px 0;
-	background-color: rgba(0,0,0,.05);
+footer.footer {
+  padding: 35px 0;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-footer.footer .footer--logo{
-	padding: 0;
-	display: block;
-	max-width: 100px;
-	margin: auto;
+footer.footer .footer--logo {
+  padding: 0;
+  display: block;
+  max-width: 100px;
+  margin: auto;
 }
 
-footer.footer .footer--content{
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	color: #222;
+footer.footer .footer--content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
 }
 
-footer.footer small{
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	display: block;
-	margin: 0 auto;
-	color :#A8A8A8;
-	padding-top:10px;
+footer.footer small {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  display: block;
+  margin: 0 auto;
+  color: #a8a8a8;
+  padding-top: 10px;
 }
 
 /* --- footer END --- */
