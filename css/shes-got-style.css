@@ -1,6 +1,21 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400&600");
 
+:root{
+  --site-width: 1000px;
+  --post-text-width: 600px;
+  
+  /* Fonts */
+  --font-family: "Open Sans", sans-serif;
+
+  /* colours */
+  --grey: #54565a;
+  --light-grey: #a8a8a8;
+  --dark-grey: #222;
+  --pink: #f8bba6;
+}
+
+
 /* Global */
 * {
   box-sizing: border-box;
@@ -8,8 +23,8 @@
 
 html,
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #54565a;
+  font-family: var(--font-family);
+  color: var(--grey);
   font-size: 1rem;
   line-height: 1.8rem;
   padding: 0;
@@ -25,9 +40,9 @@ img {
 
 h1 {
   font-size: 1.75rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family);
   font-weight: 300;
-  color: #222;
+  color: var(--dark-grey);
   text-align: center;
   line-height: 2rem;
   padding-top: 0px;
@@ -56,7 +71,7 @@ nav.nav ul {
 nav.nav ul .nav-item {
   display: inline-block;
   font-size: 0.875rem;
-  color: #54565a;
+  color: var(--grey);
   text-align: center;
   text-decoration: none;
 }
@@ -64,14 +79,14 @@ nav.nav ul .nav-item {
 nav.nav ul .nav-item a {
   display: inline-block;
   font-size: 0.875rem;
-  color: #54565a;
+  color: var(--grey);
   text-align: center;
   text-decoration: none;
   padding: 0 0.8em;
 }
 
 nav.nav ul .nav-item a.active {
-  color: #a8a8a8;
+  color: var(--light-grey);
 }
 
 /* --- Nav END --- */
@@ -79,7 +94,7 @@ nav.nav ul .nav-item a.active {
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-  max-width: 1000px;
+  max-width: var(--site-width);
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -98,7 +113,7 @@ article.post {
 
 article.post .post--article-link {
   text-decoration: none;
-  color: #222;
+  color: var(--dark-grey);
 }
 
 .post--header {
@@ -108,20 +123,20 @@ article.post .post--article-link {
   margin: 30px 0;
   text-align: center;
   font-size: 0.875rem;
-  color: #a8a8a8;
+  color: var(--light-grey);
 }
 
 .post--body a {
   text-decoration: none;
-  color: #54565a;
-  box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
+  color: var(--grey);
+  box-shadow: var(--pink) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 3px;
 }
 
 .post--body a:hover{
-	box-shadow: rgb(255, 188, 162) 0px -1.4em inset;
+	box-shadow: var(--pink) 0px -1.4em inset;
 }
 
 .post--body {
@@ -130,7 +145,7 @@ article.post .post--article-link {
 
 .post--body p {
   text-align: left;
-  max-width: 600px;
+  max-width: var(--post-text-width);
   margin: 1rem auto;
 }
 
@@ -153,12 +168,12 @@ article.post .post--article-link {
 }
 
 .post--link{
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family);
   display: inline-block;
   text-align: center;
   text-decoration: none;
   margin: 35px 0;
-  color: #222;
+  color: var(--dark-grey);
   box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
@@ -186,7 +201,7 @@ img.fullwidth {
   margin: 0.5rem 0 2rem 0;
   text-align: left;
   font-size: 0.875rem;
-  color: #a8a8a8;
+  color: var(--light-grey);
 }
 
 /* --- post END --- */
@@ -214,7 +229,7 @@ form {
   padding: 10px;
   margin-top: 5px;
 	width: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--font-family);
 
   /* Removing some browser default styles for inout field */
   box-shadow: none;
@@ -224,12 +239,12 @@ form {
 
 /* Styling for the form button */
 .form-group--button {
-  color: #222;
-  font-family: "Open Sans", sans-serif;
+  color: var(--dark-grey);
+  font-family: var(--font-family);
   font-size: 1rem;
   font-style: normal;
   text-align: center;
-  border: 2px solid #f8bba6;
+  border: 2px solid var(--pink);
 
   /* How the cursor behaves when on the element (pointer = hand/finger) */
   cursor: pointer;
@@ -253,7 +268,7 @@ form {
 }
 
 .form-group--button:hover {
-  background-color: #f8bba6;
+  background-color: var(--pink);
 }
 
 /* --- END From --- */
@@ -273,16 +288,16 @@ footer.footer .footer--logo {
 
 footer.footer .footer--content {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  color: #222;
+  font-family: var(--font-family);
+  color: var(--dark-grey);
 }
 
 footer.footer small {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family);
   display: block;
   margin: 0 auto;
-  color: #a8a8a8;
+  color: var(--light-grey);
   padding-top: 10px;
 }
 
