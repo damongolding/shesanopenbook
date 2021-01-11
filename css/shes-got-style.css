@@ -3,8 +3,8 @@
 
 :root{
   --site-width: 1000px;
-  --post-text-width: 600px;
-  
+  --post-text-width: 750px;
+
   /* Fonts */
   --font-family: "Open Sans", sans-serif;
 
@@ -33,7 +33,7 @@ body {
 
 img {
   display: block;
-  max-width: 650px;
+  max-width: 600px;
   height: auto;
   margin: 2rem auto;
 }
@@ -159,7 +159,7 @@ article.post .post--article-link {
 }
 
 /* makes images fullscreen on mobile/tablet */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
   .post--body .float-left {
     float: none;
     clear: both;
