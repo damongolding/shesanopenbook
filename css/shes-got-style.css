@@ -174,14 +174,14 @@ article.post .post--article-link {
   text-decoration: none;
   margin: 35px 0;
   color: var(--dark-grey);
-  box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
+  box-shadow: var(--pink) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 3px;
 }
 
 .post--link:hover{
-  box-shadow: rgb(255, 188, 162) 0px -2.4em inset;
+  box-shadow: var(--pink) 0px -2.4em inset;
 }
 
 /* Add the fullwidth class to a image to make it fullwidth */
