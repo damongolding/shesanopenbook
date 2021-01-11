@@ -18,7 +18,7 @@ body {
 
 img {
   display: block;
-  max-width: 750px;
+  max-width: 650px;
   height: auto;
   margin: 2rem auto;
 }
@@ -98,7 +98,7 @@ article.post {
 
 article.post .post--article-link {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 .post--header {
@@ -113,7 +113,7 @@ article.post .post--article-link {
 
 .post--body a {
   text-decoration: none;
-  color: inherit;
+  color: #54565a;
   box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
@@ -140,7 +140,7 @@ article.post .post--article-link {
 }
 
 /* makes images fullscreen on mobile/tablet */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .post--body .float-left {
     float: none;
     clear: both;
@@ -154,7 +154,7 @@ article.post .post--article-link {
   text-align: center;
   text-decoration: none;
   margin: 35px 0;
-  color: inherit;
+  color: #222;
   box-shadow: rgb(248, 187, 166) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
@@ -220,7 +220,7 @@ form {
 
 /* Styling for the form button */
 .form-group--button {
-  color: #54565a;
+  color: #222;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
