@@ -4,6 +4,7 @@
 :root{
   --site-width: 1000px;
   --post-text-width: 750px;
+  --post-image-max-width:600px;
 
   /* Fonts */
   --font-family: "Open Sans", sans-serif;
@@ -33,7 +34,7 @@ body {
 
 img {
   display: block;
-  max-width: 600px;
+  max-width: var(--post-image-max-width);
   height: auto;
   margin: 2rem auto;
 }
