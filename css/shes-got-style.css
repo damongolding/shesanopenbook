@@ -4,6 +4,7 @@
 :root{
   --site-width: 1000px;
   --post-text-width: 750px;
+  --post-image-max-width:600px;
 
   /* Fonts */
   --font-family: "Open Sans", sans-serif;
@@ -33,7 +34,7 @@ body {
 
 img {
   display: block;
-  max-width: 550px;
+  max-width: var(--post-image-max-width);
   height: auto;
   margin: 2rem auto;
 }
@@ -177,6 +178,7 @@ article.post .post--article-link {
   box-shadow: var(--pink) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
+  padding-bottom: 3px;
 }
 
 .post--link:hover{
