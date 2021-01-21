@@ -4,7 +4,7 @@
 :root{
   --site-width: 1000px;
   --post-text-width: 700px;
-  --post-image-max-width:600px;
+  --post-image-max-width:500px;
 
   /* Fonts */
   --font-family: "Open Sans", sans-serif;
