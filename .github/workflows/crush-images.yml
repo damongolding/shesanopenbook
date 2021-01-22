@@ -4,10 +4,10 @@ on:
     branches:
       - master
     paths:
-      - '**.jpg'
-      - '**.jpeg'
-      - '**.png'
-      - '**.gif'
+      - 'assets/**.jpg'
+      - 'assets/**.jpeg'
+      - 'assets/**.png'
+      - 'assets/**.gif'
 jobs:
   crush:
     runs-on: ubuntu-latest
