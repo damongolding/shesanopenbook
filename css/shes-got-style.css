@@ -49,18 +49,6 @@ h1 {
   padding-top: 0px;
 }
 
-h2{
-  font-family: var(--font-family);
-  font-size: 0.925rem;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
-  line-height: 1.75em;
-  color: var(--dark-grey);
-  line-height: 2rem;
-  max-width: var(--post-image-max-width);
-  text-align: left;
-}
-
 /* --- Global END --- */
 
 /* --- Nav --- */
@@ -150,6 +138,7 @@ article.post .post--article-link {
 
 .post--body a:hover{
 	box-shadow: var(--pink) 0px -1.4em inset;
+  color: var(--dark-grey)
 }
 
 .post--body {
