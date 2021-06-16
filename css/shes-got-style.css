@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css?family=BioRhyme:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@300;400&display=swap");
 
 :root{
   --site-width: 1000px;
@@ -7,7 +7,7 @@
   --post-image-max-width:600px;
 
   /* Fonts */
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Lato", sans-serif;
 
   /* colours */
   --grey: #54565a;
@@ -26,7 +26,7 @@ html,
 body {
   font-family: var(--font-family);
   color: var(--grey);
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.75rem;
   padding: 0;
   margin: 0;
@@ -40,9 +40,9 @@ img {
 }
 
 h1 {
-  font-size: 1.875srem;
+  font-size: 1.975srem;
   font-family: var(--font-family);
-  font-weight: 300;
+  font-weight: 500;
   color: var(--dark-grey);
   text-align: center;
   line-height: 2rem;
