@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@100&display=swap");
 
 :root{
   --site-width: 1000px;
@@ -27,6 +27,7 @@ body {
   font-family: var(--font-family);
   color: var(--grey);
   font-size: 1.1rem;
+  font-weight: 100;
   line-height: 1.75rem;
   padding: 0;
   margin: 0;
@@ -40,9 +41,9 @@ img {
 }
 
 h1 {
-  font-size: 1.975srem;
+  font-size: 1.875rem;
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 100;
   color: var(--dark-grey);
   text-align: center;
   line-height: 2rem;
@@ -289,6 +290,17 @@ footer.footer .footer--logo {
   max-width: 100px;
   margin: auto;
 }
+
+}
+
+footer.footer .footer--logo {
+  padding: 0;
+  display: block;
+  max-width: 100px;
+  margin: auto;
+}
+
+
 
 footer.footer small {
   text-align: center;
