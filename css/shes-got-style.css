@@ -290,19 +290,13 @@ footer.footer .footer--logo {
   margin: auto;
 }
 
-footer.footer .footer--content {
-  text-align: center;
-  font-family: var(--font-family);
-  color: var(--dark-grey);
-}
-
 footer.footer small {
   text-align: center;
   font-family: var(--font-family);
   display: block;
   margin: 0 auto;
   color: var(--light-grey);
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 /* --- footer END --- */
