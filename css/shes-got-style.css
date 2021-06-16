@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
 
 :root{
   --site-width: 1000px;
@@ -13,7 +13,7 @@
   --grey: #54565a;
   --light-grey: #a8a8a8;
   --dark-grey: #222;
-  --pink: #f8bba6;
+  --yellow: #F5D767;
 }
 
 
@@ -27,7 +27,7 @@ body {
   font-family: var(--font-family);
   color: var(--grey);
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.75rem;
   padding: 0;
   margin: 0;
@@ -43,7 +43,7 @@ img {
 h1 {
   font-size: 1.875rem;
   font-family: var(--font-family);
-  font-weight: 100;
+  font-weight: 300;
   color: var(--dark-grey);
   text-align: center;
   line-height: 2rem;
@@ -131,14 +131,14 @@ article.post .post--article-link {
 .post--body a {
   text-decoration: none;
   color: var(--grey);
-  box-shadow: var(--pink) 0px -2px 0px inset;
+  box-shadow: var(--yellow) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 3px;
 }
 
 .post--body a:hover{
-	box-shadow: var(--pink) 0px -1.4em inset;
+	box-shadow: var(--yellow) 0px -1.4em inset;
   color: var(--dark-grey)
 }
 
@@ -177,14 +177,14 @@ article.post .post--article-link {
   text-decoration: none;
   margin: 35px 0;
   color: var(--dark-grey);
-  box-shadow: var(--pink) 0px -2px 0px inset;
+  box-shadow: var(--yellow) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 3px;
 }
 
 .post--link:hover{
-  box-shadow: var(--pink) 0px -2.4em inset;
+  box-shadow: var(--yellow) 0px -2.4em inset;
 }
 
 /* Add the fullwidth class to a image to make it fullwidth */
@@ -249,7 +249,7 @@ form {
   font-size: 1rem;
   font-style: normal;
   text-align: center;
-  border: 2px solid var(--pink);
+  border: 2px solid var(--yellow);
 
   /* How the cursor behaves when on the element (pointer = hand/finger) */
   cursor: pointer;
@@ -273,7 +273,7 @@ form {
 }
 
 .form-group--button:hover {
-  background-color: var(--pink);
+  background-color: var(--yellow);
 }
 
 /* --- END From --- */
