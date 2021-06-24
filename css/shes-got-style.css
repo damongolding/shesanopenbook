@@ -244,8 +244,6 @@ form {
 .form-group--button {
   color: var(--dark-grey);
   font-family: var(--font-family);
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
   font-size: 1rem;
   font-style: normal;
   text-align: center;
