@@ -285,24 +285,13 @@ footer.footer {
 footer.footer .footer--logo {
   padding: 0;
   display: block;
-  max-width: 100px;
-  margin: auto;
-}
-
-}
-
-footer.footer .footer--logo {
-  padding: 0;
-  display: block;
   max-width: 200px;
   margin: auto;
 }
 
-
-
 footer.footer small {
   text-align: center;
-  font-family: var(--font-family);
+  font-family: var(--font-family);w
   display: block;
   margin: 0 auto;
   color: var(--light-grey);
