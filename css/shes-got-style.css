@@ -10,11 +10,10 @@
   --font-family: "Lato", sans-serif;
 
   /* colours */
-  --grey: #54565a;
-  --light-grey: #a8a8a8;
-  --dark-grey: #222;
-  --yellow: #F5D767;
-  --pink: #F8BBA6;
+  --grey: #475569;
+  --light-grey: #94A3B8;
+  --dark-grey: #0F172A;
+  --light-pink: #F1DBE7;
 }
 
 
@@ -120,6 +119,7 @@ article.post .post--article-link {
 }
 
 .post--header {
+  text-align: left;
 }
 
 .post--date {
@@ -134,14 +134,14 @@ article.post .post--article-link {
 .post--body a {
   text-decoration-skip-ink: auto;
   color: var(--grey);
-  text-decoration-color: var(--yellow);
+  text-decoration-color: var(--light-pink);
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 2px;
 }
 
 .post--body a:hover{
-	box-shadow: var(--yellow) 0px -1.4em inset;
+	box-shadow: var(--light-pink) 0px -1.4em inset;
   color: var(--dark-grey)
 }
 
@@ -180,14 +180,14 @@ article.post .post--article-link {
   text-decoration: none;
   margin: 35px 0;
   color: var(--dark-grey);
-  box-shadow: var(--yellow) 0px -2px 0px inset;
+  box-shadow: var(--light-pink) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
   will-change: box-shadow;
   padding-bottom: 3px;
 }
 
 .post--link:hover{
-  box-shadow: var(--yellow) 0px -2.4em inset;
+  box-shadow: var(--pink) 0px -2.4em inset;
 }
 
 /* Add the fullwidth class to a image to make it fullwidth */
@@ -250,7 +250,7 @@ form {
   font-size: 1rem;
   font-style: normal;
   text-align: center;
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--light-pink);
 
   /* How the cursor behaves when on the element (pointer = hand/finger) */
   cursor: pointer;
@@ -274,7 +274,7 @@ form {
 }
 
 .form-group--button:hover {
-  background-color: var(--yellow);
+  background-color: var(--light-pink);
 }
 
 /* --- END From --- */
@@ -282,22 +282,22 @@ form {
 /* --- footer --- */
 footer.footer {
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--light-pink);
 }
 
 footer.footer .footer--logo {
   padding: 0;
   display: block;
-  max-width: 200px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 footer.footer small {
   text-align: center;
-  font-family: var(--font-family);w
+  font-family: var(--font-family);
   display: block;
   margin: 0 auto;
-  color: var(--light-grey);
+  color: var(--dark-grey);
   padding-top: 50px;
 }
 
