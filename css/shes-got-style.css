@@ -129,8 +129,6 @@ article.post .post--article-link {
   color: var(--light-grey);
 }
 
-/* damon I'm trying to recreate the link/underline styling of this site https://tink.uk/guide-to-wcag/ */
-
 .post--body a {
   text-decoration-skip-ink: auto;
   color: var(--grey);
@@ -288,7 +286,7 @@ footer.footer {
 footer.footer .footer--logo {
   padding: 0;
   display: block;
-  max-width: 300px;
+  max-width: 225px;
   margin: 0 auto;
 }
 
@@ -298,7 +296,7 @@ footer.footer small {
   display: block;
   margin: 0 auto;
   color: var(--dark-grey);
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /* --- footer END --- */
