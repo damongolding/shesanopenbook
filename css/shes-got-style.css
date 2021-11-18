@@ -281,20 +281,12 @@ footer.footer {
   background-color: var(--light-pink);
 }
 
-footer.footer .footer--logo {
-  padding: 0;
-  display: block;
-  max-width: 225px;
-  margin: 0 auto;
-}
-
 footer.footer small {
   text-align: center;
   font-family: var(--font-family);
   display: block;
   margin: 0 auto;
   color: var(--dark-grey);
-  padding-top: 20px;
 }
 
 /* --- footer END --- */
