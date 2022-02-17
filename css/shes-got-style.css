@@ -25,11 +25,8 @@ html,
 body {
   font-family: var(--font-family);
   color: var(--grey);
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.6rem;
-  padding: 0;
-  margin: 0;
+  font-size: 1.175rem;
+  line-height: 1.7rem;
 }
 
 img {
@@ -62,7 +59,6 @@ nav.nav {
 nav.nav ul {
   text-transform: uppercase;
   letter-spacing: 0.125rem;
-  line-height: 1.75em;
   font-style: normal;
   list-style: none;
   margin: 0;
@@ -259,7 +255,7 @@ form {
 		always be rounded no matter the size of the button)
 	*/
   border-radius: 240958px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.25rem;
 
   /* to centre the button */
   display: block;
