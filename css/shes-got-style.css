@@ -21,12 +21,22 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: var(--font-family);
+  color: var(--dark-grey);
+  font-size: 2rem;
+  font-weight:300;
+  text-align: center;
+  margin: 2rem auto;
+  line-height: 2.5rem;
+  padding-top: 0px;
+}
+
 html,
 body {
   font-family: var(--font-family);
   color: var(--grey);
   font-size: 1.175rem;
-  line-height: 1.7rem;
 }
 
 img {
@@ -36,15 +46,7 @@ img {
   margin: 2rem auto;
 }
 
-h1 {
-  font-size: 2rem;
-  font-family: var(--font-family);
-  font-weight:300;
-  color: var(--dark-grey);
-  text-align: center;
-  line-height: 2.5rem;
-  padding-top: 0px;
-}
+
 
 /* --- Global END --- */
 
@@ -100,10 +102,10 @@ nav.nav ul .nav-item a.active {
 
 /* --- post --- */
 article.post {
-  line-height: 1.7em;
   letter-spacing: 0px;
   font-style: normal;
   font-size: 1rem;
+  line-height: 1.6em;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -119,7 +121,6 @@ article.post .post--article-link {
 
 .post--date {
   margin: 30px 0;
-  text-align: center;
   font-size: 0.875rem;
   color: var(--light-grey);
 }
@@ -237,7 +238,7 @@ form {
 
 /* Styling for the form button */
 .form-group--button {
-  color: var(--dark-grey);
+  color: var(--grey);
   font-family: var(--font-family);
   font-weight: normal;
   font-size: 1rem;
@@ -266,6 +267,7 @@ form {
 }
 
 .form-group--button:hover {
+  color: var(--dark-grey);
   background-color: var(--light-pink);
 }
 
@@ -273,6 +275,7 @@ form {
 
 /* --- footer --- */
 footer.footer {
+  font-size: 1.125rem;
   padding: 32px;
   background-color: var(--light-pink);
 }
