@@ -116,9 +116,9 @@ article.post .post--article-link {
 }
 
 .post--date {
-  text-align: left;
   max-width: var(--post-text-width);
-  margin: 30px 0;
+  text-align: left;
+  margin: 2rem auto;
   font-size: 0.875rem;
   color: var(--light-grey);
 }
