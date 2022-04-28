@@ -183,6 +183,7 @@ img.fullwidth {
   margin: 0.5rem 0 2rem 0;
   text-align: left;
   font-size: 0.875rem;
+  line-height: 1.15;
   color: var(--light-grey);
 }
 
