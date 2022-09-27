@@ -36,6 +36,7 @@ h1 {
 h2 {
   font-family: var(--font-family);
   color: var(--dark-grey);
+  text-transform: uppercase;
   max-width: var(--post-text-width);
   font-size: 1rem;
   line-height: 1.25rem;
@@ -81,6 +82,7 @@ nav.nav {
 nav.nav ul {
   letter-spacing: 0.125rem;
   font-style: normal;
+  text-transform: uppercase;
   list-style: none;
   margin: 0;
   padding: 0;
