@@ -3,11 +3,11 @@
 
 :root {
     --site-width: 1200px;
-    --post-text-width: 750px;
-    --post-image-max-width: 550px;
+    --post-text-width: 760px;
+    --post-image-max-width: 920px;
 
     /* Logo */
-    --logo-size: 70px;
+    --logo-size: 60px;
 
     /* Fonts */
     --font-family: "Lato", sans-serif;
