@@ -7,7 +7,7 @@
     --post-image-max-width: 920px;
 
     /* Logo */
-    --logo-size: 60px;
+    --logo-size: 64px;
 
     /* Fonts */
     --font-family: "Lato", sans-serif;
@@ -134,7 +134,7 @@ nav.nav ul .nav-item a.active {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 30px;
+    gap: 50px;
     max-width: var(--site-width);
 }
 
