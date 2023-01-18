@@ -2,111 +2,111 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
 
 :root {
-  --site-width: 1200px;
-  --post-text-width: 750px;
-  --post-image-max-width: 550px;
+    --site-width: 1200px;
+    --post-text-width: 750px;
+    --post-image-max-width: 550px;
 
-  /* Fonts */
-  --font-family: "Lato", sans-serif;
+    /* Fonts */
+    --font-family: "Lato", sans-serif;
 
-  /* colours */
-  --grey: #475569;
-  --light-grey: #94a3b8;
-  --dark-grey: #0f172a;
-  --light-pink: #f1dbe7;
+    /* colours */
+    --grey: #475569;
+    --light-grey: #94a3b8;
+    --dark-grey: #0f172a;
+    --light-pink: #f1dbe7;
 }
 
 /* Global */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 {
-  font-family: var(--font-family);
-  color: var(--dark-grey);
-  max-width: var(--post-text-width);
-  font-size: 1.85rem;
-  font-weight: 200;
-  text-align: left;
-  margin: 2rem auto;
-  line-height: 2.5rem;
-  padding-top: 0px;
+    font-family: var(--font-family);
+    color: var(--dark-grey);
+    max-width: var(--post-text-width);
+    font-size: 1.85rem;
+    font-weight: 200;
+    text-align: left;
+    margin: 2rem auto;
+    line-height: 2.5rem;
+    padding-top: 0px;
 }
 
 h2 {
-  font-family: var(--font-family);
-  color: var(--dark-grey);
-  text-transform: uppercase;
-  max-width: var(--post-text-width);
-  font-size: 1rem;
-  line-height: 1.25rem;
-  letter-spacing: 0.125rem;
-  font-weight: 300;
-  text-align: left;
-  margin: 2rem auto;
-  padding-bottom: 0px;
+    font-family: var(--font-family);
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    max-width: var(--post-text-width);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 2rem auto;
+    padding-bottom: 0px;
 }
 
 html,
 body {
-  font-family: var(--font-family);
-  font-style: normal;
-  color: var(--grey);
-  font-size: 1.175rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    color: var(--grey);
+    font-size: 1.175rem;
 }
 
 img {
-  display: block;
-  max-width: var(--post-image-max-width);
-  height: auto;
-  margin: 2rem auto;
+    display: block;
+    max-width: var(--post-image-max-width);
+    height: auto;
+    margin: 2rem auto;
 }
 
 .logo {
-  display: inline-block;
-  max-width: 20px;
-  margin: 0;
-  padding: 0;
+    display: inline-block;
+    max-width: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* --- Global END --- */
 
 /* --- Nav --- */
 nav.nav {
-  width: auto;
-  text-align: center;
-  margin: 0;
-  padding: 2rem 0;
+    width: auto;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
 }
 
 nav.nav ul {
-  letter-spacing: 0.125rem;
-  font-style: normal;
-  text-transform: uppercase;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    letter-spacing: 0.125rem;
+    font-style: normal;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav.nav ul .nav-item {
-  display: inline-block;
-  font-size: 0.875rem;
-  color: var(--grey);
-  text-align: center;
-  text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--grey);
+    text-align: center;
+    text-decoration: none;
 }
 
 nav.nav ul .nav-item a {
-  display: inline-block;
-  font-size: 0.875rem;
-  color: var(--grey);
-  text-align: center;
-  text-decoration: none;
-  padding: 0 0.8em;
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--grey);
+    text-align: center;
+    text-decoration: none;
+    padding: 0 0.8em;
 }
 
 nav.nav ul .nav-item a.active {
-  color: var(--light-grey);
+    color: var(--light-grey);
 }
 
 /* --- Nav END --- */
@@ -114,98 +114,119 @@ nav.nav ul .nav-item a.active {
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 0 1rem;
+    max-width: var(--site-width);
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* --- grid/structure END --- */
 
+/* --- Header --- */
+#header,
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--site-width);
+}
+
+/* Mobile header */
+@media only screen and (max-width: 600px) {
+    #header,
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+/* --- Header END --- */
+
 /* --- post --- */
 article.post {
-  letter-spacing: 0px;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6em;
-  margin-bottom: 50px;
-  text-align: left;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.6em;
+    margin-bottom: 50px;
+    text-align: left;
 }
 
 article.post .post--article-link {
-  text-decoration: none;
-  color: var(--dark-grey);
+    text-decoration: none;
+    color: var(--dark-grey);
 }
 
 .post--date {
-  max-width: var(--post-text-width);
-  text-align: left;
-  margin: 2rem auto;
-  font-size: 0.875rem;
-  color: var(--light-grey);
+    max-width: var(--post-text-width);
+    text-align: left;
+    margin: 2rem auto;
+    font-size: 0.875rem;
+    color: var(--light-grey);
 }
 
 .post--body a {
-  margin: 2rem auto;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 3px;
-  color: var(--grey);
-  text-decoration-color: var(--light-pink);
-  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
-  will-change: box-shadow;
+    margin: 2rem auto;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 3px;
+    color: var(--grey);
+    text-decoration-color: var(--light-pink);
+    transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
+    will-change: box-shadow;
 }
 
 .post--body a:hover {
-  box-shadow: var(--light-pink) 0px -1.4em inset;
-  color: var(--dark-grey);
+    box-shadow: var(--light-pink) 0px -1.4em inset;
+    color: var(--dark-grey);
 }
 
 .post--body {
-  text-align: center;
+    text-align: center;
 }
 
 .post--body p {
-  text-align: left;
-  max-width: var(--post-text-width);
-  margin: 1rem auto;
+    text-align: left;
+    max-width: var(--post-text-width);
+    margin: 1rem auto;
 }
 
 .post--body img {
-  width: 100%;
+    width: 100%;
 }
 
 .post--body .float-left {
-  float: left;
-  padding-right: 30px;
+    float: left;
+    padding-right: 30px;
 }
 
 /* makes images fullscreen on mobile/tablet */
 @media only screen and (max-width: 600px) {
-  .post--body .float-left {
-    float: none;
-    clear: both;
-    width: 100%;
-  }
+    .post--body .float-left {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
 }
 
 /* Add the fullwidth class to a image to make it fullwidth */
 img.fullwidth {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
 }
 
 .caption {
-  display: inline-block;
+    display: inline-block;
 }
 .caption img {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .caption p {
-  margin: 0.5rem 0 2rem 0;
-  text-align: left;
-  font-size: 0.875rem;
-  line-height: 1.15;
-  color: var(--light-grey);
+    margin: 0.5rem 0 2rem 0;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    color: var(--light-grey);
 }
 
 /* --- post END --- */
@@ -213,83 +234,83 @@ img.fullwidth {
 /* -- Form --- */
 
 form {
-  width: 100%;
-  max-width: 550px;
-  margin: auto;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
 }
 
 .form-group {
-  margin-bottom: 2rem;
-  text-align: left;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 /* Styling for the input fields */
 .form-group--input input,
 .form-group--input textarea {
-  border: 1px solid #c8c8c8;
-  border-radius: 3px;
-  display: block;
-  font-size: 1rem;
-  padding: 10px;
-  margin-top: 5px;
-  width: 100%;
-  font-family: var(--font-family);
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    font-family: var(--font-family);
 
-  /* Removing some browser default styles for inout field */
-  box-shadow: none;
-  background-color: #fff;
-  outline: none;
+    /* Removing some browser default styles for inout field */
+    box-shadow: none;
+    background-color: #fff;
+    outline: none;
 }
 
 /* Styling for the form button */
 .form-group--button {
-  color: var(--grey);
-  font-family: var(--font-family);
-  font-weight: normal;
-  text-align: center;
-  font-size: 1rem;
-  border: 2px solid var(--light-pink);
+    color: var(--grey);
+    font-family: var(--font-family);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid var(--light-pink);
 
-  /* How the cursor behaves when on the element (pointer = hand/finger) */
-  cursor: pointer;
+    /* How the cursor behaves when on the element (pointer = hand/finger) */
+    cursor: pointer;
 
-  background-color: #fff;
+    background-color: #fff;
 
-  /*
+    /*
 		This is how we round corners
 		(the number is so high just to be sure the button will
 		always be rounded no matter the size of the button)
 	*/
-  border-radius: 3142593px;
-  padding: 0.5rem 1.25rem;
+    border-radius: 3142593px;
+    padding: 0.5rem 1.25rem;
 
-  /* to centre the button */
-  display: block;
-  margin: 0 auto;
+    /* to centre the button */
+    display: block;
+    margin: 0 auto;
 
-  transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
-  will-change: background-color;
+    transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s;
+    will-change: background-color;
 }
 
 .form-group--button:hover {
-  color: var(--dark-grey);
-  background-color: var(--light-pink);
+    color: var(--dark-grey);
+    background-color: var(--light-pink);
 }
 
 /* --- END From --- */
 
 /* --- footer --- */
 footer.footer {
-  font-size: 1.125rem;
-  padding: 32px;
-  background-color: var(--light-pink);
+    font-size: 1.125rem;
+    padding: 32px;
+    background-color: var(--light-pink);
 }
 
 footer.footer small {
-  text-align: center;
-  font-family: var(--font-family);
-  display: block;
-  color: var(--dark-grey);
+    text-align: center;
+    font-family: var(--font-family);
+    display: block;
+    color: var(--dark-grey);
 }
 
 /* --- footer END --- */
