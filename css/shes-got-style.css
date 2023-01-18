@@ -6,6 +6,9 @@
     --post-text-width: 750px;
     --post-image-max-width: 550px;
 
+    /* Logo */
+    --logo-size: 70px;
+
     /* Fonts */
     --font-family: "Lato", sans-serif;
 
@@ -66,6 +69,11 @@ img {
     display: inline-block;
     margin: 0;
     padding: 0;
+    max-width: var(--logo-size);
+}
+
+.logo img{
+    max-width: var(--logo-size);
 }
 
 /* --- Global END --- */
@@ -125,18 +133,20 @@ nav.nav ul .nav-item a.active {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 30px;
     max-width: var(--site-width);
 }
 
 /* Mobile header */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
     #header,
     .header {
         flex-direction: column;
         justify-content: center;
         max-width: 100%;
         padding: 0;
+        gap:0;
     }
 }
 /* --- Header END --- */
