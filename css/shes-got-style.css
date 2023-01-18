@@ -4,7 +4,7 @@
 :root {
     --site-width: 1200px;
     --post-text-width: 760px;
-    --post-image-max-width: 920px;
+    --post-image-max-width: 540px;
 
     /* Logo */
     --logo-size: 64px;
@@ -28,22 +28,20 @@ h1 {
     font-family: var(--font-family);
     color: var(--dark-grey);
     max-width: var(--post-text-width);
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     font-weight: 200;
     text-align: left;
     margin: 2rem auto;
-    line-height: 2.5rem;
+    line-height: 2.25rem;
     padding-top: 0px;
 }
 
 h2 {
     font-family: var(--font-family);
     color: var(--dark-grey);
-    text-transform: uppercase;
     max-width: var(--post-text-width);
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.125rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 300;
     text-align: left;
     margin: 2rem auto;
@@ -282,15 +280,9 @@ form {
 
     /* How the cursor behaves when on the element (pointer = hand/finger) */
     cursor: pointer;
-
     background-color: #fff;
 
-    /*
-		This is how we round corners
-		(the number is so high just to be sure the button will
-		always be rounded no matter the size of the button)
-	*/
-    border-radius: 3142593px;
+    border-radius: 8px;
     padding: 0.5rem 1.25rem;
 
     /* to centre the button */
@@ -306,7 +298,7 @@ form {
     background-color: var(--light-pink);
 }
 
-/* --- END From --- */
+/* --- END Form --- */
 
 /* --- footer --- */
 footer.footer {
