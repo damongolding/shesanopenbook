@@ -121,7 +121,6 @@ nav.nav ul .nav-item a.active {
 /* --- grid/structure --- */
 #header,
 .content-wrapper {
-    max-width: var(--post-text-width);
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -135,7 +134,7 @@ nav.nav ul .nav-item a.active {
     align-items: center;
     justify-content: start;
     gap: 50px;
-    max-width: var(--site-width);
+    max-width: var(--post-text-width);
 }
 
 /* Mobile header */
