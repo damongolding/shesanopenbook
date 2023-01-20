@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
 
 :root {
-    --site-width: 1200px;
+    --site-width: 1100px;
     --post-text-width: 760px;
     --post-image-max-width: 600px;
 
@@ -218,7 +218,7 @@ article.post .post--article-link {
 
 /* Add the fullwidth class to a image to make it fullwidth */
 img.fullwidth {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin: 2rem auto;
 }
