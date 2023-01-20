@@ -4,7 +4,7 @@
 :root {
     --site-width: 1200px;
     --post-text-width: 760px;
-    --post-image-max-width: 1100px;
+    --post-image-max-width: 600px;
 
     /* Logo */
     --logo-size: 64px;
