@@ -171,6 +171,7 @@ article.post .post--article-link {
     margin: 2rem auto;
     font-size: 0.875rem;
     color: var(--light-grey);
+    text-transform: uppercase;
 }
 
 .post--body a {
