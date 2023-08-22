@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
 
 :root {
-    --site-width: 1000px;
+    --site-width: 960px;
     --post-text-width: 760px;
     --post-image-max-width: 600px;
 
