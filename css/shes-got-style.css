@@ -53,7 +53,7 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     color: var(--grey);
-    font-size: 1.175rem;
+    font-size: 1rem;
 }
 
 img {
@@ -136,7 +136,7 @@ nav.nav ul .nav-item a.active {
 }
 
 /* Mobile header */
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 600px) {
     #header,
     .header {
         flex-direction: column;
