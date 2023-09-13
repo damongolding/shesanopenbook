@@ -70,13 +70,15 @@ img {
     max-width: var(--logo-size);
 }
 
-.logo img{
+.logo img {
     max-width: var(--logo-size);
 }
 
 /* --- Global END --- */
 
 /* --- Nav --- */
+
+
 nav.nav {
     width: auto;
     text-align: center;
@@ -114,6 +116,68 @@ nav.nav ul .nav-item a.active {
     color: var(--light-grey);
 }
 
+#menu-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#menu-button svg {
+    margin-right: 0.5rem;
+}
+
+#menu-button span {
+    width: 3rem;
+    overflow: visible;
+}
+
+#menu-button span::after {
+    content: "Menu";
+}
+
+#menu-open-icon {
+    display: block;
+}
+
+#menu-close-icon {
+    display: none;
+}
+
+.open #menu-open-icon {
+    display: none;
+}
+
+.open #menu-close-icon {
+    display: block;
+}
+
+/* HAMBURGER */
+@media only screen and (max-width: 600px) {
+    #menu-button {
+        display: flex;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    .open #menu-button span::after {
+        content: "Close";
+    }
+
+    .open #main-nav {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    nav.nav {
+        padding-top: 1rem;
+    }
+}
+
 /* --- Nav END --- */
 
 /* --- grid/structure --- */
@@ -143,7 +207,7 @@ nav.nav ul .nav-item a.active {
         justify-content: center;
         max-width: 100%;
         padding: 0;
-        gap:0;
+        gap: 0;
     }
 }
 /* --- Header END --- */
