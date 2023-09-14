@@ -1,6 +1,6 @@
 const menuButton = document.getElementById("menu-button");
-const nav = document.getElementsByTagName("nav")[0];
+const header = document.getElementsByTagName("header")[0];
 
 menuButton.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    header.classList.toggle("open");
 });
