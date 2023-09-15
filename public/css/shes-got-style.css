@@ -150,7 +150,23 @@ nav.nav ul .nav-item a.active {
     }
 
     #main-nav {
-        display: none;
+        margin-top: 1rem;
+    }
+
+    #main-nav li {
+        max-height: 0;
+
+        will-change: max-height, margin;
+        transition-property: max-height, margin;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        margin-bottom: 0;
+    }
+
+    .open #main-nav li {
+        max-height: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     #menu-button span::after {
@@ -163,7 +179,7 @@ nav.nav ul .nav-item a.active {
 
     .open #main-nav {
         display: block;
-        margin-top: 1rem;
+        height: 100%;
     }
 
     nav.nav {
