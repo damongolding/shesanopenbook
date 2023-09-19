@@ -1,5 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import JollofLogo from "../../assets/Jollof-Box-logo.gif";
+import JollofMobileImage from "../../assets/Jollof-box-mobile.png";
 ---
 
 <Layout>
@@ -16,12 +20,12 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="caption">
-                <img src="/assets/Jollof-Box-logo.gif" alt="" />
+                <Image src={JollofLogo} alt="" />
                 <p>Caption.</p>
             </div>
 
             <div class="caption">
-                <img src="/assets/Jollof-box-mobile.png" alt="" />
+                <Image src={JollofMobileImage} alt="" />
                 <p>Caption.</p>
             </div>
 

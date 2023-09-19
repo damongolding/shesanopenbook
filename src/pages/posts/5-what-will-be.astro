@@ -1,5 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import LLPmobile from "../../assets/LLP-mobile.png";
+import LLPposter from "../../assets/LLP-poster.png";
+import LLPgif from "../../assets/LLP.gif";
 ---
 
 <Layout>
@@ -16,17 +21,17 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="caption">
-                <img src="/assets/LLP.gif" alt="" />
+                <Image src={LLPgif} alt="" />
                 <p>Caption.</p>
             </div>
 
             <div class="caption">
-                <img class="fullwidth" src="/assets/LLP-mobile.png" alt="" />
+                <Image class="fullwidth" src={LLPmobile} alt="" />
                 <p>Caption.</p>
             </div>
 
             <div class="caption">
-                <img src="/assets/LLP-poster.png" alt="" />
+                <Image src={LLPposter} alt="" />
                 <p>Caption.</p>
             </div>
 

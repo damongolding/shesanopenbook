@@ -1,5 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import IeltsAppImage from "../../assets/IELTS-app.png";
+import IeltsBannerImage from "../../assets/IELTS-banners.gif";
+import IeltsDesktopImage from "../../assets/IELTS-desktop.png";
+import IeltsSetUpGuideImage from "../../assets/IELTS-set-up-guide.gif";
 ---
 
 <Layout>
@@ -29,22 +35,22 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="caption">
-                <img class="fullwidth" src="/assets/IELTS-desktop.png" alt="" />
+                <Image class="fullwidth" src={IeltsDesktopImage} alt="" />
 
                 <p>Desktop wireframe for English practise homepage.</p>
 
                 <div class="caption">
-                    <img src="/assets/IELTS-set-up-guide.gif" alt="" />
+                    <Image src={IeltsSetUpGuideImage} alt="" />
                     <p>Mobile wireframe for test set-up explanation.</p>
                 </div>
 
                 <div class="caption">
-                    <img class="fullwidth" src="/assets/IELTS-app.png" alt="" />
+                    <Image class="fullwidth" src={IeltsAppImage} alt="" />
                     <p>Mobile mock-ups for the self-paced learning app.</p>
                 </div>
 
                 <div class="caption">
-                    <img src="/assets/IELTS-banners.gif" alt="" />
+                    <Image src={IeltsBannerImage} alt="" />
                     <p>Audience segmented promotions for social media.</p>
                 </div>
 
