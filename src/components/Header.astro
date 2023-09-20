@@ -58,10 +58,13 @@
     </nav>
 </header>
 
-<script is:inline>
-document.querySelectorAll("#main-nav li a").forEach((link) => {
-    if (link.href === window.location.href) {
-        link.classList.add("active");
-    }
-});
+<script>
+    document.querySelectorAll("#main-nav li a").forEach((link) => {
+        if (
+            link.href === window.location.href ||
+            link.href + "/" === window.location.href
+        ) {
+            link.classList.add("active");
+        }
+    });
 </script>
