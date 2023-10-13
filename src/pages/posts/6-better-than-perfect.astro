@@ -1,5 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import FeedThemDesktopImage from "../../assets/FeedThem-desktop-1.png";
+import FeedThemLogo from "../../assets/FeedThem-logo.png";
 ---
 
 <Layout>
@@ -16,7 +20,7 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="caption">
-                <img src="/assets/FeedThem-logo.png" alt="" />
+                <Image src={FeedThemLogo} alt="" />
                 <p>
                     Logotype design using
                     <a
@@ -27,11 +31,7 @@ import Layout from "../../layouts/Layout.astro";
             </div>
 
             <div class="caption">
-                <img
-                    class="fullwidth"
-                    src="/assets/FeedThem-desktop-1.png"
-                    alt=""
-                />
+                <Image class="fullwidth" src={FeedThemDesktopImage} alt="" />
                 <p>
                     High-fidelity mock-up demonstrating proposed
                     photography style.

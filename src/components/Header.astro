@@ -1,5 +1,5 @@
 ---
-import NavItem from "./Nav-item.astro";
+
 ---
 
 <header id="header" class="header">
@@ -41,10 +41,30 @@ import NavItem from "./Nav-item.astro";
 
     <nav class="nav">
         <ul id="main-nav">
-            <NavItem href="/" text="About" />
-            <NavItem href="/work" text="Work" />
-            <NavItem href="/archive" text="Archive" />
-            <NavItem href="/contact" text="Contact" />
+            <li class="nav-item">
+                <a href="/">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/work">Work</a>
+            </li>
+            <li class="nav-item">
+                <a href="/archive">Archive</a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact">Contact</a>
+            </li>
         </ul>
     </nav>
 </header>
+
+<script>
+    document.querySelectorAll("#main-nav li a").forEach((link) => {
+        if (
+            link.href === window.location.href ||
+            link.href + "/" === window.location.href
+        ) {
+            link.classList.add("active");
+        }
+    });
+</script>

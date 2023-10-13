@@ -1,5 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import CesDesktop from "../../assets/CES-desktop.png";
+import CesGif from "../../assets/CES-v1.gif";
+import CesGif2 from "../../assets/CES-v2.gif";
 ---
 
 <Layout>
@@ -16,17 +21,17 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="caption">
-                <img src="/assets/CES-v1.gif" alt="" />
+                <Image src={CesGif} alt="" />
                 <p>Visual treatment option 1.</p>
             </div>
 
             <div class="caption">
-                <img class="fullwidth" src="/assets/CES-desktop.png" alt="" />
+                <Image class="fullwidth" src={CesDesktop} alt="" />
                 <p>Medium fidelity prototype for user testing.</p>
             </div>
 
             <div class="caption">
-                <img src="/assets/CES-v2.gif" alt="" />
+                <Image src={CesGif2} alt="" />
                 <p>Visual treatment option 2.</p>
             </div>
 
