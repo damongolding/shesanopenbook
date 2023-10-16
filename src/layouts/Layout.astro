@@ -14,7 +14,6 @@ import "../css/shes-got-style.css";
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link rel="stylesheet" href="/css/shes-got-style.css" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -44,7 +43,15 @@ import "../css/shes-got-style.css";
             <slot />
 
             <Footer />
-            <script src="/assets/js/menu.js" is:inline></script>
+
+            <script>
+                const menuButton = document.getElementById("menu-button");
+                const header = document.getElementsByTagName("header")[0];
+
+                menuButton?.addEventListener("click", () => {
+                    header.classList.toggle("open");
+                });
+            </script>
         </div>
     </body>
 </html>
