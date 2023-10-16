@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import JollofLogo from "../../assets/Jollof-Box-logo.gif";
+import JollofMobileImage from "../../assets/Jollof-box-mobile.png";
+---
+
+<Layout>
+    <article class="post">
+        <div class="post--header">
+            <div class="post--date">February 2021</div>
+            <h1>Together we can do so much</h1>
+        </div>
+
+        <div class="post--body">
+            <p>
+                Lorem ipsum dolor sit amet a diam consectetur adipiscing elit
+                sed do tempor estim nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="caption">
+                <Image src={JollofLogo} alt="" />
+                <p>Caption.</p>
+            </div>
+
+            <div class="caption">
+                <Image class="fullwidth" src={JollofMobileImage} alt="" />
+                <p>Caption.</p>
+            </div>
+
+            <h2>Response</h2>
+            <p>
+                Lorem ipsum dolor sit amet a diam consectetur adipiscing elit
+                sed do tempor estim nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p><a href="/archive">See more work</a>.</p>
+            <br />
+        </div>
+    </article>
+</Layout>
