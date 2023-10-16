@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
 
 :root {
-    --post-text-width: 650px;
+    --post-text-width: 640px;
     --post-image-max-width: 560px;
 
     /* Logo */
@@ -259,6 +259,8 @@ article.post .post--article-link {
     text-align: left;
     margin: 2rem auto;
     font-size: 0.875rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
     color: var(--light-grey);
 }
 

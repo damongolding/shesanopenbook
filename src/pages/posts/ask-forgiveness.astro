@@ -2,8 +2,10 @@
 import Layout from "../../layouts/Layout.astro";
 
 import { Image } from "astro:assets";
-import CesDesktop from "../../assets/CES-desktop.png";
-import CesGif from "../../assets/CES.gif";
+import IELTSapp from "../../assets/IELTS-app.png";
+import IELTSgif from "../../assets/IELTS-banners.gif";
+import IELTSdesktop from "../../assets/IELTS-desktop.png";
+import IELTSsetup from "../../assets/IELTS--set-up-guide.gif";
 ---
 
 <Layout>
@@ -15,27 +17,36 @@ import CesGif from "../../assets/CES.gif";
 
         <div class="post--body">
             <p>
-                Lorem ipsum dolor sit amet a diam consectetur adipiscing elit
-                sed do tempor estim nisi ut aliquip ex ea commodo consequat.
+                At the start of last year the British Council pitched to IELTS - 
+                its International English Language Testing partners, an ambition to 
+                develop the first product that fully aligned language learning with 
+                testing.<br>
+                With the vast majority of its global teaching and testing centres 
+                closed, the organisation felt it had an opportunity to develop an 
+                offer that benefitted the increasing number of digital natives with 
+                accessible enabling technology. <br>
+                The decision was made to invite Senior Leadership to engage in a 
+                conversation about the opportunity, for which a significant number 
+                of discussion aids needed to be prepared.
             </p>
 
             <div class="caption">
-                <Image src={CesGif} alt="" />
-                <p>Caption1.</p>
-            </div>
-
-            <div class="caption">
-                <Image class="fullwidth" src={CesDesktop} alt="" />
+                <Image src={IELTSgif} alt="" />
                 <p>Caption.</p>
             </div>
 
             <div class="caption">
-                <Image src={CesGif} alt="" />
-                <p>Caption1.</p>
+                <Image class="fullwidth" src={IELTSapp} alt="" />
+                <p>Caption.</p>
             </div>
 
             <div class="caption">
-                <Image class="fullwidth" src={CesDesktop} alt="" />
+                <Image src={IELTSsetup} alt="" />
+                <p>Caption.</p>
+            </div>
+
+            <div class="caption">
+                <Image class="fullwidth" src={IELTSdesktop} alt="" />
                 <p>Caption.</p>
             </div>
 
