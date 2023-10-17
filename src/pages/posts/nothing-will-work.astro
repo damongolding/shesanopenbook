@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import IDdesktop from "../../assets/ID-desktop.png";
+import IDmobile from "../../assets/ID-mobile.png";
+---
+
+<Layout>
+    <article class="post">
+        <div class="post--header">
+            <div class="post--date">JULY 2023</div>
+            <h1>Nothing will work unless you do</h1>
+        </div>
+
+        <div class="post--body">
+            <p>
+                Lorem ipsum dolor sit amet a diam consectetur adipiscing elit
+                sed do tempor estim nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="caption">
+                <Image class="fullwidth" src={IDmobile} alt="" />
+                <p>Caption.</p>
+            </div>
+
+            <div class="caption">
+                <Image class="fullwidth" src={IDdesktop} alt="" />
+                <p>Caption.</p>
+            </div>
+
+            <h2>Response</h2>
+            <p>
+                Lorem ipsum dolor sit amet a diam consectetur adipiscing elit
+                sed do tempor estim nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p><a href="/work">See more work</a>.</p>
+            <br />
+        </div>
+    </article>
+</Layout>
